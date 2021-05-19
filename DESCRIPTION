@@ -2,15 +2,18 @@ Package: discordR
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "Erez",
-           family = "Shomron",
-           role = c("aut", "cre"),
-           email = "erezshomron@mykolab.com")
+    c(person(given = "Erez",
+             family = "Shomron",
+             role = c("aut", "cre"),
+             email = "erezshomron@mykolab.com"),
+      person(given = "Dos",
+             family = "Banaag",
+             role = "ctb"))
 Maintainer: Erez Shomron <erezshomron@mykolab.com>
 Description: 'DiscordR' is a wrapper for the Discord API.
 URL: https://github.com/eshom/discordR/
 BugReports: https://github.com/eshom/discordR/issues/
-Depends: R (>= 4.0)
+Depends: R (>= 4.0), RJSONIO, R6, websocket, later, httr
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
