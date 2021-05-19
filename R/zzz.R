@@ -1,6 +1,6 @@
 .onLoad <- function(libname, pkgname) {
         options(discordR_base_url = "https://discord.com/api",
-                discordR_api_version = 9,
+                discordR_api_version = "9",
                 discordR_bot_token = Sys.getenv("DISCORD_BOT_TOKEN"))
 }
 

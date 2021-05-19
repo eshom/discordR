@@ -15,6 +15,7 @@ set_token <- function(token) {
 #' @title Get a bot token
 #' @return Character vector. The bot token that has been set by [set_token()]
 #' @author Erez Shomron
+#' @export
 get_token <- function() {
         getOption("discordR_bot_token")
 }

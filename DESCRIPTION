@@ -1,7 +1,7 @@
 Package: discordR
-Title: What the Package Does (One Line, Title Case)
+Title: Discord API Bot Wrapper
 Version: 0.0.0.9000
-Authors@R: 
+Authors@R:
     person(given = "Erez",
            family = "Shomron",
            role = c("aut", "cre"),
@@ -11,6 +11,9 @@ Description: 'DiscordR' is a wrapper for the Discord API.
 URL: https://github.com/eshom/discordR/
 BugReports: https://github.com/eshom/discordR/issues/
 Depends: R (>= 4.0)
+Imports: httr (>= 1.4.2),
+         jsonlite (>= 1.7.2),
+         websocket (>= 1.4.0)
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
