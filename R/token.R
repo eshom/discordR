@@ -7,15 +7,15 @@
 #' @param token Character vector. The bot token to set.
 #' @author Erez Shomron
 #' @export
-set_token <- function(token) {
+token_set <- function(token) {
         options(discordR_bot_token = token)
 }
 
 #' Gets the bot token to be used in API calls that require authorization.
 #' @title Get a bot token
-#' @return Character vector. The bot token that has been set by [set_token()]
+#' @return Character vector. The bot token that has been set by [token_set()]
 #' @author Erez Shomron
 #' @export
-get_token <- function() {
+token_get <- function() {
         getOption("discordR_bot_token")
 }

@@ -1,7 +1,7 @@
-gateway_bot_get <- function(token = get_token()) {
-        url <- get_endpoint_url("gateway/bot")
+gateway_bot_get <- function(token = token_get()) {
+        url <- endpoint_url_get("gateway/bot")
         res <- httr::GET(url,
-                         httr::add_headers(Authorization = get_bot_authorization_str()))
+                         httr::add_headers(Authorization = bot_authorization_str_get()))
         c_type <- res$header[["content-type"]]
 
         if (c_type != "application/json") {
