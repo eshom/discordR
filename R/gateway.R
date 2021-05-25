@@ -17,8 +17,5 @@ gateway_bot_url_cache <- function(gateway_url = gateway_bot_get()$url) {
 }
 
 gateway_websocket_get <- function(gateway_url = g_cache$gateway_bot) {
-        query <- paste0("?", "v=", getOption("discordR_api_version"), "&",
-                        "encoding=json")
-        url <- paste(gateway_url, query, sep = "/")
-        websocket::WebSocket$new(url, autoConnect = FALSE)
+        websocket::WebSocket$new(gateway_url, autoConnect = FALSE)
 }

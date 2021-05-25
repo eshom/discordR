@@ -45,3 +45,7 @@ error_codes <- with(tables, {
 
 use_data(opcodes, close_event_codes, http_response_codes, error_codes,
          internal = TRUE, overwrite = TRUE)
+
+get_op <- function(op_name, op_section) {
+        with(opcodes, opcodes$code[name == op_name & section == op_section])
+}
