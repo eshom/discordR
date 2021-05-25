@@ -13,7 +13,10 @@ BugReports: https://github.com/eshom/discordR/issues/
 Depends: R (>= 4.0)
 Imports: httr (>= 1.4.2),
          jsonlite (>= 1.7.2),
-         websocket (>= 1.4.0)
+         websocket (>= 1.4.0),
+         rvest,
+         devtools,
+         later
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
